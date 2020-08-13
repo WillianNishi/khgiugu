@@ -1,0 +1,230 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image:
+ url("https://coolbackgrounds.io/images/backgrounds/index/compute-ea4c57a4.png");
+   background-size: 1000px;
+   font-family:	Courier New;
+   color:white;
+   font-family: 'Rubik', sans-serif;
+}
+
+@media (min-width: 400px) {
+   body {
+     font-size: 18px;
+   }
+ }
+ 
+ @media (min-width: 600px) {
+   body {
+     font-size: 22px;
+   }
+ }
+
+header {
+   height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   color:#7B68EE;
+   
+  }
+
+p {
+ font-size:50px;
+ display:block;
+ text-align:center;
+ height:60px;
+ margin-top:35vh;
+ text-transform:uppercase;
+ letter-spacing:10px;
+ background-color:#663399;
+ color:white;
+}
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #111;
+    overflow: hidden;
+    background-size: auto;
+    background-position:center;
+    z-index: 1;
+ }
+ 
+ .demo .large-header {
+    background-color:#663399
+ }
+ 
+ .main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+ }
+ 
+ .demo .main-title {
+    text-transform: uppercase;
+    font-size: 2.2em;
+    letter-spacing: 0.1em;
+ }
+ 
+ .main-title .thin {
+    font-weight: 200;
+ }
+ 
+ @media only screen and (max-width: 768px) {
+    .demo .main-title {
+       font-size: 3em;
+    }
+ }
+ 
+ .menu {
+   font-size: 20px;
+   height: 0px;
+   margin-top:0vh;
+   letter-spacing:6px;
+  }
+ 
+ .menu ul {
+     display: flex;
+     text-align: center;
+  }
+ .menu li {
+     list-style: none;
+   color: white
+  }
+  .menu a {
+     display: block;
+     transition: background-color 1s, color 2s ;
+  }
+ a {
+        text-decoration: none;
+     color: #7B68EE
+     }
+ a:hover {
+        text-decoration: underline;
+   color: white
+     }
+
+     .img-Sobre {
+        height: 180px;
+        width: 180px;
+        margin-top:7vh;
+     }
+   h1 {
+      font-size: 50px;
+      letter-spacing:9px;
+      margin-top:9vh;
+      font-family: 'DM Mono', monospace;
+      font-family: 'Inconsolata', monospace;
+      font-family: 'Open Sans Condensed', sans-serif;
+   }
+   h2 {
+      font-size: 20px;
+      height: 100px;
+      margin-top:50vh;
+      letter-spacing:6px;
+      color: #7B68EE;
+      display:block;
+      text-align:center;
+   }
+   .Sobre {
+   font-size: 20px;
+   height: 100px;
+   margin-top:50vh;
+   letter-spacing:6px;
+   color: #7B68EE;
+   display:block;
+   text-align:center;
+   }
+   h3 {
+      font-size: 20px;
+      height: 100px;
+      margin-top:2vh;
+      letter-spacing:6px;  
+      text-decoration: underline;
+   }
+   h4 {
+      font-size: 15px;
+      height: 100px;
+      margin-top:2vh;
+      letter-spacing:6px;
+   }
+   h5 {
+      font-size: 15px;
+      height: 20px;
+      margin-top:1vh;
+      letter-spacing:2px;
+   }
+   h6 {
+      font-size: 15px;
+      height: 1px;
+      margin-top:1vh;
+      letter-spacing:2px;
+      color: whitesmoke;
+   }
+    
+.portifólio figure {
+text-align: center;
+}
+
+.portifólio .grid {
+   display: grid;
+   gap: 3em;
+}
+
+@media (min-width: 560px) {
+   .portifólio .grid {
+     grid-template-columns: 240px 240px;
+   }
+ }
+ 
+ @media (min-width: 880px) {
+   .portifólio .grid {
+     grid-template-columns: repeat(3, 260px);
+     align-content: center;
+     justify-content: center;
+     height: calc(100vh - 4em - 48px - 1.5em);
+   }
+
+   .img-portifólio {
+      height: 180px;
+      width: 240px;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 500ms;
+    }
+
+    .img-portifólio:hover {
+      transform: scale(1.5)
+    }
+    .Contatos .icons {
+      text-align: center;
+    }
+    .Contatos a {
+      color: whitesmoke;
+      font-size: 4em;
+      transition: text-shadow 1s;
+    }
+
+    .Contatos a:active,
+    .Contatos a:hover  {
+    text-decoration: none;
+    text-shadow: 0px 0px 40px rgb(255, 0, 234);
+    }
+    .menu a:active,
+    .menu a:hover {
+          background-color: rgb(255, 255, 255);;
+          color: #7B68EE;
+         }
